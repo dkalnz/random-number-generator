@@ -10,24 +10,10 @@ function rng(min, max) {
 	return Math.random() * rangeP1 + min;
 }
 
-// Orig RNG
-// console.log('one-threes');
-// console.log(rng(1, 3));
-// console.log(rng(1, 3));
-// console.log(rng(1, 3));
-// console.log('two-to fours');
-// console.log(rng(2, 4));
-// console.log(rng(2, 4));
-// console.log(rng(2, 4));
-// console.log('three to 10s');
-// console.log(rng(3, 10));
-// console.log(rng(3, 10));
-// console.log(rng(3, 10));
-
-// Liew RNG
 const liewsArray = [];
-for (i = 1; i <= 100; i++) {
-	liewsArray.push(rngLiew(1, 3));
+for (i = 0; i < 100; i++) {
+	liewsArray.push(rngLiew(600, 800));
+	console.log(liewsArray[i]);
 }
 function countWithinFor(numOfThese) {
 	return liewsArray.filter((x) => x === numOfThese).length;
